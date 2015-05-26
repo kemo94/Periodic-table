@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA34B962-A9D5-4D62-872E-89A17A4B1F28}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Chemicals</RootNamespace>
+    <AssemblyName>Chemicals</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\123.png" />
+    <Resource Include="images\1234.png" />
+    <Resource Include="images\5.png" />
+    <Resource Include="images\ac.jpg" />
+    <Resource Include="images\ag.jpg" />
+    <Resource Include="images\al.jpg" />
+    <Resource Include="images\am.jpg" />
+    <Resource Include="images\ar.jpg" />
+    <Resource Include="images\as.jpg" />
+    <Resource Include="images\at.jpg" />
+    <Resource Include="images\au.jpg" />
+    <Resource Include="images\b.jpg" />
+    <Resource Include="images\ba.jpg" />
+    <Resource Include="images\BE.jpg" />
+    <Resource Include="images\bh.jpg" />
+    <Resource Include="images\bi.jpg" />
+    <Resource Include="images\bk.jpg" />
+    <Resource Include="images\br.jpg" />
+    <Resource Include="images\c.jpg" />
+    <Resource Include="images\ca.jpg" />
+    <Resource Include="images\cd.jpg" />
+    <Resource Include="images\ce.jpg" />
+    <Resource Include="images\cf.jpg" />
+    <Resource Include="images\cl.jpg" />
+    <Resource Include="images\cm.jpg" />
+    <Resource Include="images\cn.jpg" />
+    <Resource Include="images\co.jpg" />
+    <Resource Include="images\cr.jpg" />
+    <Resource Include="images\cs.jpg" />
+    <Resource Include="images\cu.jpg" />
+    <Resource Include="images\db.jpg" />
+    <Resource Include="images\ds.jpg" />
+    <Resource Include="images\dy.jpg" />
+    <Resource Include="images\er.jpg" />
+    <Resource Include="images\es.jpg" />
+    <Resource Include="images\eu.jpg" />
+    <Resource Include="images\f.jpg" />
+    <Resource Include="images\fe.jpg" />
+    <Resource Include="images\fl.jpg" />
+    <Resource Include="images\fm.jpg" />
+    <Resource Include="images\fr.jpg" />
+    <Resource Include="images\ga.jpg" />
+    <Resource Include="images\gd.jpg" />
+    <Resource Include="images\ge.jpg" />
+    <Resource Include="images\H.jpg" />
+    <Resource Include="images\HE.jpg" />
+    <Resource Include="images\hf.jpg" />
+    <Resource Include="images\hg.jpg" />
+    <Resource Include="images\ho.jpg" />
+    <Resource Include="images\hs.jpg" />
+    <Resource Include="images\i.jpg" />
+    <Resource Include="images\in.jpg" />
+    <Resource Include="images\info.png" />
+    <Resource Include="images\info1.png" />
+    <Resource Include="images\ir.jpg" />
+    <Resource Include="images\k.jpg" />
+    <Resource Include="images\kr.jpg" />
+    <Resource Include="images\la.jpg" />
+    <Resource Include="images\lf.jpg" />
+    <Resource Include="images\LI.jpg" />
+    <Resource Include="images\lr.jpg" />
+    <Resource Include="images\lu.jpg" />
+    <Resource Include="images\lv.jpg" />
+    <Resource Include="images\md.jpg" />
+    <Resource Include="images\mg.jpg" />
+    <Resource Include="images\mn.jpg" />
+    <Resource Include="images\mo.jpg" />
+    <Resource Include="images\mt.jpg" />
+    <Resource Include="images\n.jpg" />
+    <Resource Include="images\Na.jpg" />
+    <Resource Include="images\nb.jpg" />
+    <Resource Include="images\nd.jpg" />
+    <Resource Include="images\ne.jpg" />
+    <Resource Include="images\ni.jpg" />
+    <Resource Include="images\no.jpg" />
+    <Resource Include="images\np.jpg" />
+    <Resource Include="images\o.jpg" />
+    <Resource Include="images\os.jpg" />
+    <Resource Include="images\p.jpg" />
+    <Resource Include="images\pa.jpg" />
+    <Resource Include="images\pb.jpg" />
+    <Resource Include="images\pd.jpg" />
+    <Resource Include="images\pm.jpg" />
+    <Resource Include="images\po.jpg" />
+    <Resource Include="images\pr.jpg" />
+    <Resource Include="images\pt.jpg" />
+    <Resource Include="images\pu.jpg" />
+    <Resource Include="images\ra.jpg" />
+    <Resource Include="images\rb.jpg" />
+    <Resource Include="images\re.jpg" />
+    <Resource Include="images\rf.jpg" />
+    <Resource Include="images\rg.jpg" />
+    <Resource Include="images\rh.jpg" />
+    <Resource Include="images\rn.jpg" />
+    <Resource Include="images\ru.jpg" />
+    <Resource Include="images\s.jpg" />
+    <Resource Include="images\sb.jpg" />
+    <Resource Include="images\sc.jpg" />
+    <Resource Include="images\se.jpg" />
+    <Resource Include="images\sg.jpg" />
+    <Resource Include="images\si.jpg" />
+    <Resource Include="images\sm.jpg" />
+    <Resource Include="images\sn.jpg" />
+    <Resource Include="images\sr.jpg" />
+    <Resource Include="images\ta.jpg" />
+    <Resource Include="images\tb.jpg" />
+    <Resource Include="images\tc.jpg" />
+    <Resource Include="images\te.jpg" />
+    <Resource Include="images\th.jpg" />
+    <Resource Include="images\ti.jpg" />
+    <Resource Include="images\tl.jpg" />
+    <Resource Include="images\tm.jpg" />
+    <Resource Include="images\u.jpg" />
+    <Resource Include="images\Untitled-1.jpg" />
+    <Resource Include="images\Untitled-7.jpg" />
+    <Resource Include="images\uub.jpg" />
+    <Resource Include="images\uuh.jpg" />
+    <Resource Include="images\uup.jpg" />
+    <Resource Include="images\uuq.jpg" />
+    <Resource Include="images\uut.jpg" />
+    <Resource Include="images\v.jpg" />
+    <Resource Include="images\w.jpg" />
+    <Resource Include="images\xe.jpg" />
+    <Resource Include="images\y.jpg" />
+    <Resource Include="images\yb.jpg" />
+    <Resource Include="images\zn.jpg" />
+    <Resource Include="images\zr.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="elements\ag.jpg" />
+    <Resource Include="elements\al.jpg" />
+    <Resource Include="elements\am.jpg" />
+    <Resource Include="elements\ar.jpg" />
+    <Resource Include="elements\as.jpg" />
+    <Resource Include="elements\au.jpg" />
+    <Resource Include="elements\b.jpg" />
+    <Resource Include="elements\ba.jpg" />
+    <Resource Include="elements\be.jpg" />
+    <Resource Include="elements\bi.jpg" />
+    <Resource Include="elements\br.jpg" />
+    <Resource Include="elements\C.jpg" />
+    <Resource Include="elements\ca.jpg" />
+    <Resource Include="elements\cd.jpg" />
+    <Resource Include="elements\ce.jpg" />
+    <Resource Include="elements\cf.jpg" />
+    <Resource Include="elements\cl.jpg" />
+    <Resource Include="elements\co.jpg" />
+    <Resource Include="elements\cr.jpg" />
+    <Resource Include="elements\cs.jpg" />
+    <Resource Include="elements\cu.jpg" />
+    <Resource Include="elements\dy.jpg" />
+    <Resource Include="elements\er.jpg" />
+    <Resource Include="elements\eu.JPG" />
+    <Resource Include="elements\f.jpg" />
+    <Resource Include="elements\fadi.png" />
+    <Resource Include="elements\fe.jpg" />
+    <Resource Include="elements\ga.jpg" />
+    <Resource Include="elements\gd.jpg" />
+    <Resource Include="elements\ge.jpg" />
+    <Resource Include="elements\H.jpg" />
+    <Resource Include="elements\he.jpg" />
+    <Resource Include="elements\hf.jpg" />
+    <Resource Include="elements\hg.jpg" />
+    <Resource Include="elements\ho.jpg" />
+    <Resource Include="elements\i.jpg" />
+    <Resource Include="elements\in.jpg" />
+    <Resource Include="elements\ir.jpg" />
+    <Resource Include="elements\k.JPG" />
+    <Resource Include="elements\kr.jpg" />
+    <Resource Include="elements\la.jpg" />
+    <Resource Include="elements\li.jpg" />
+    <Resource Include="elements\lu.jpg" />
+    <Resource Include="elements\mg.jpg" />
+    <Resource Include="elements\mn.jpg" />
+    <Resource Include="elements\mo.jpg" />
+    <Resource Include="elements\myemail.png" />
+    <Resource Include="elements\myname1.png" />
+    <Resource Include="elements\n.jpg" />
+    <Resource Include="elements\na.jpg" />
+    <Resource Include="elements\nb.jpg" />
+    <Resource Include="elements\nd.jpg" />
+    <Resource Include="elements\ne.jpg" />
+    <Resource Include="elements\ni.jpg" />
+    <Resource Include="elements\nopic.png" />
+    <Resource Include="elements\np.jpg" />
+    <Resource Include="elements\o.jpg" />
+    <Resource Include="elements\os.jpg" />
+    <Resource Include="elements\p.jpg" />
+    <Resource Include="elements\pb.jpg" />
+    <Resource Include="elements\pd.jpg" />
+    <Resource Include="elements\pp.jpg" />
+    <Resource Include="elements\pr.jpg" />
+    <Resource Include="elements\pt.jpg" />
+    <Resource Include="elements\pu.jpg" />
+    <Resource Include="elements\ra.jpg" />
+    <Resource Include="elements\rb.JPG" />
+    <Resource Include="elements\re.jpg" />
+    <Resource Include="elements\rh.jpg" />
+    <Resource Include="elements\ru.jpg" />
+    <Resource Include="elements\s.jpg" />
+    <Resource Include="elements\sb.jpg" />
+    <Resource Include="elements\sc.jpg" />
+    <Resource Include="elements\se.jpg" />
+    <Resource Include="elements\si.jpg" />
+    <Resource Include="elements\sm.jpg" />
+    <Resource Include="elements\sn.jpg" />
+    <Resource Include="elements\sr.jpg" />
+    <Resource Include="elements\ta.jpg" />
+    <Resource Include="elements\tb.jpg" />
+    <Resource Include="elements\te.jpg" />
+    <Resource Include="elements\ti.JPG" />
+    <Resource Include="elements\tl.jpg" />
+    <Resource Include="elements\tm.jpg" />
+    <Resource Include="elements\u.jpg" />
+    <Resource Include="elements\v.jpg" />
+    <Resource Include="elements\w.jpg" />
+    <Resource Include="elements\xe.jpg" />
+    <Resource Include="elements\y.jpg" />
+    <Resource Include="elements\yb.jpg" />
+    <Resource Include="elements\zn.jpg" />
+    <Resource Include="elements\zr.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
